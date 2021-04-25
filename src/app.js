@@ -98,7 +98,7 @@ app.get("/product2info",(req,res)=>{
 })
 
 app.get("/productpay2",(req,res)=>{
-    res.render("productpay2");
+    res.render("product2pay2");
 })
 
 app.post("/product2info",async(req,res)=>{
@@ -113,7 +113,7 @@ app.post("/product2info",async(req,res)=>{
         })
 
         const dataSaver = await UserData.save();
-        res.status(201).render("productpay2");
+        res.status(201).render("product2pay2");
         
     } catch (error) {
         res.render(error);
@@ -426,7 +426,7 @@ app.post("/product12info",async(req,res)=>{
 })
 
 //product13
-app.get("/product13",(req,res)=>{
+app.get("/product13th",(req,res)=>{
     res.render("product13");
 })
 
@@ -1028,6 +1028,13 @@ app.post("/product30info",async(req,res)=>{
         res.render(error);
     }
 })
+
+
+
+// Till this Bugs Cleared
+
+
+
 
 
 app.get("/product31",(req,res)=>{

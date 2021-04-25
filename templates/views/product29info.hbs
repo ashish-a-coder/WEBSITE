@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>All Products</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon"
@@ -20,19 +19,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-
-    <!-- Owl Carousel Links -->
-    <link rel="stylesheet" href="./OWL CAROUSEL NEEDED STUFF/css/owl.carousel.css">
-    <link rel="stylesheet" href="./OWL CAROUSEL NEEDED STUFF/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./OWL CAROUSEL NEEDED STUFF/css/owl.theme.green.css">
-
-    <!-- Owl Carousel Javascript Part -->
-    <script src="./OWL CAROUSEL NEEDED STUFF/jquery.min.js"></script>
-    <script src="./OWL CAROUSEL NEEDED STUFF/js/owl.carousel.min.js"></script>
-
     <!-- Custom Style -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/singleProduct.css">
+    <link rel="stylesheet" href="./css/address.css">
 
 </head>
 
@@ -62,42 +51,47 @@
     </nav>
 
 
+    <!-- info Collection Design -->
 
-    <!-- SingleProduct design -->
-
-    <section class="singleProductDesignLayer">
+    <section class="InfoLayer">
         <div class="container">
-
             <div class="row">
-                <!-- [SingleProductCard] add this class at the below col when you need a zoom viewer -->
-                <!-- <img src="./images/shoes/img7.jpg" class="img-fluid" alt="NO_IMG"> -->
+                <div class="col col-sm-12 col-lg-6 col-md-10 infoBox-1">
+                    <form action="/product29info" method="POST">
+                        <div class="infoBox-1-innerBox">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter Your Name" autocomplete="off">
+                        </div>
 
+                        <div class="infoBox-1-innerBox">
+                            <label for="phone">Phone</label>
+                            <input type="number" name="phone" placeholder="Enter Your Number" autocomplete="off">
+                        </div>
 
-                <div class="col col-md-6 col-lg-6 col-sm-6">
-                    <!-- Carousel Layer -->
-                    <div class="owl-carousel owl-theme">
-                        <!-- Add your Product Image -->
-                        <div class="item"><img src="./images/prroduct13/1.png" class="img-fluid" alt="NO_IMG"></div>
-                        <div class="item"><img src="./images/prroduct13/2.png" class="img-fluid" alt="NO_IMG"></div>
-                        <div class="item"><img src="./images/prroduct13/3.png" class="img-fluid" alt="NO_IMG"></div>
-                        <div class="item"><img src="./images/prroduct13/1.png" class="img-fluid" alt="NO_IMG"></div>
-                    </div>
+                        <div class="infoBox-1-innerBox">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off">
+                        </div>
 
+                        <div class="infoBox-1-innerBox">
+                            <label for="state">State</label>
+                            <input type="text" name="state" placeholder="Enter Your State" autocomplete="off">
+                        </div>
+
+                        <div class="infoBox-1-innerBox">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" name="pincode" placeholder="Enter Your Pincode" autocomplete="off">
+                        </div>
+
+                        <div class="infoBox-1-innerBox">
+                            <label for="address">Address</label>
+                            <textarea name="address" placeholder="Enter Your Proper Address For Delivery" cols="30"
+                                rows="5" autocomplete="off"></textarea>
+                        </div>
+
+                        <button type="submit" class="submissionButton">Submit</button>
+                    </form>
                 </div>
-
-
-                <div class="col col-sm-6 col-lg-6 col-md-6 SingleProductContent">
-                    <!-- Add Your Content Here -->
-                    <h1>JORDAN RETRO 6 TRAVIS SCOTT</h1>
-                    <h3>on sale</h3>
-
-                    <h2><span><del> &#8377;4500 </del></span> &#8377;3500</h2>
-                    <h4>Availability: <span> In Stock</span></h4>
-                    <h3>size:41-42-43( UK 7-8-9 only ) </h3>
-                    <br>
-                    <a href="/product13info">Buy Now</a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -106,17 +100,13 @@
 
 
 
-    <section class="productVideoSection">
-        <div class="conatiner">
-            <div class="row">
-                <div class="col col-sm-12 col-lg-6 col-md-6 productVideo">
-                    <video controls>
-                        //<source src="./images/prroduct13/4.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
 
 
 
@@ -128,7 +118,7 @@
 
 
     <!-- Footer Layer [Eighth Layer]-->
-    <footer>
+    <!-- <footer>
         <div class="footerSection">
             <div class="container">
                 <div class="row">
@@ -153,7 +143,7 @@
                         <a href="#">Our Materials</a>
                         <a href="#">In The News</a>
                     </div>
-
+                    
                     <div class="col col-md-3 col-lg-3 col-sm-12 FooterLayer-3">
                         <strong>Help</strong>
                         <a href="#">FAQ</a>
@@ -161,12 +151,12 @@
                         <a href="#">Wholesale Inquiries</a>
                         <a href="#">Rewards</a>
                     </div>
-
+                    
 
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 
@@ -176,23 +166,24 @@
 
     <!-- Social Media Layer [9th layer] -->
 
+    <!-- 
     <section class="SocialMediaLayer">
-        <div class="SocialMediaLastLayer">
+            <div class="SocialMediaLastLayer">
+                
+                <div class="para">
+                    <p>Copyright &copy; 2021 Footwear | All Rights Reserved !</p>
+                </div>
 
-            <div class="para">
-                <p>Copyright &copy; 2021 Footwear | All Rights Reserved !</p>
-            </div>
-
-            <div class="socialMedia">
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <div class="socialMedia">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
-        </div>
-    </section>
+    </section> -->
 
 
 
@@ -215,8 +206,6 @@
 
     <!--  Custom Javascript  -->
     <script src="./js/script.js"></script>
-    <script src="./js/carousel.js"></script>
-
 
 </body>
 
